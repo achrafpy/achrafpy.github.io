@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AchrafPy Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>AchrafPy</h1>
+    <button id="theme-toggle">☀️</button>
+  </header>
+
+  <!-- Hero -->
+  <main class="hero">
+    <h2>Web Developer <br> & Prompt Engineer</h2>
+    <p>
+      Specialized in building modern web apps and AI-powered tools.  
+      Experienced with Flutter, React and secure system design.
+    </p>
+    <a href="#projects" class="btn">View My Work</a>
+  </main>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h3>Featured Projects</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <h4>💳 MoneyGram App</h4>
+        <p>Google Play → PayPal converter with Flutter & Firebase.</p>
+      </div>
+      <div class="project-card">
+        <h4>⏰ Smart Alarm</h4>
+        <p>Alarm app with math challenges built in Flutter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer class="footer">
+    <p>📩 Get in touch: 
+      <a href="mailto:achrafpy@gmail.com">achrafpy@gmail.com</a>
+    </p>
+  </footer>
+
+  <script>
+    // Dark/Light Mode Toggle
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+      toggleBtn.textContent = document.body.classList.contains('light') ? "🌙" : "☀️";
+    });
+  </script>
+</body>
+</html>
